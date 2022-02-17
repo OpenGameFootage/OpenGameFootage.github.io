@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Hero from "../components/hero"
 
+import firebaseApp from "../services/firebase/firebase-initialize"
+
 const IndexPage = () => (
 	<ChakraProvider theme={theme}>
 		<Seo title="Home" />

@@ -11,7 +11,10 @@ import Seo from "../components/seo"
 //https://stackoverflow.com/questions/51702369/gatsby-redirect-to-home-page-instead-of-displaying-404-page
 //https://support.gatsbyjs.com/hc/en-us/articles/1500003051241-Working-with-Redirects
 
+const browser = typeof window !== "undefined" && window;
+
 const NotFoundPage = () => (
+	browser && (
 	<ChakraProvider theme={theme}>
 		<Seo title="Secret" />
 		<Layout>
@@ -23,6 +26,7 @@ const NotFoundPage = () => (
 			</Container>
 		</Layout>
   </ChakraProvider>
+  )
 )
 
 export default NotFoundPage

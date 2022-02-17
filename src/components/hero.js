@@ -4,14 +4,21 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import { ExternalLinkIcon } from "@chakra-ui/icons"
 
-const Hero = () => (
+const Hero = () => {
+	
+	return(
 	<Container centerContent py='5'>
 		<Heading>Welcome!</Heading>
 		<Text>You can find my Youtube channel along with all footage{' '}
 			<Link href={process.env.YOUTUBE_CHANNEL} isExternal>here <ExternalLinkIcon mx='2px' /></Link>
 		</Text>
+
+		{/* {data.map((item, index) => (
+						<Text>{item}</Text>
+		))} */}
 	</Container>
-)
+	)
+	}
 
 Hero.propTypes = {
 }

@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
 			<Container as="main" maxW='container.lg'>
 				{children}
 			</Container>
-			<Footer/>
+			{/* <Footer/> */}
 		</Flex>
 		</>
 	)
